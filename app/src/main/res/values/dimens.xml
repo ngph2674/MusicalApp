@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="magin">10dp</dimen>
+    <dimen name="maginBot">20dp</dimen>
+    <dimen name="textSize">14sp</dimen>
+</resources>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#02666A"
+    tools:context=".MainActivity">
+
+    <SearchView
+        android:id="@+id/simpleSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/magin"
+        android:layout_marginTop="@dimen/magin"
+        android:layout_marginRight="@dimen/magin"
+        android:layout_marginBottom="150dp"
+        android:background="#027478"
+        android:iconifiedByDefault="false"
+        android:queryHint="Search for a song"
+        android:textSize="@dimen/textSize" />
+
+    <RelativeLayout
+        android:id="@+id/firstLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/simpleSearch"
+        android:layout_marginBottom="50dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/countryMusic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/rockMusic"
+            android:orientation="vertical"
+            tools:ignore="RelativeOverlap">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/country"
+                android:scaleType="matrix"
+                android:src="@drawable/country_foreground" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/country_music"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rockMusic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/magin"
+            android:paddingRight="@dimen/magin"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/rock_music"
+                android:src="@drawable/rock" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="@string/rock"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/popMusic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/rockMusic"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/pop"
+                android:scaleType="centerCrop"
+                android:src="@drawable/pop" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/pop_music"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/secondLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstLayout"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/jazzMusic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/randbMusic"
+            android:orientation="vertical"
+            tools:ignore="RelativeOverlap,UseCompoundDrawables">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/jazz"
+                android:src="@drawable/jazz" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/jazz_music"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/randbMusic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/magin"
+            android:paddingRight="@dimen/magin"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/rb"
+                android:src="@drawable/rb_foreground" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="@string/r_amp_b"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/electronicMusic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/randbMusic"
+            android:orientation="vertical"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/electronic"
+                android:src="@drawable/electric_foreground" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/electronic"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">MusicalStructureApp</string>
+    <string name="electronic">Electronic</string>
+    <string name="musicicon">musicicon</string>
+    <string name="_0_10">0:10</string>
+    <string name="_4_10">4:10</string>
+    <string name="country">country</string>
+    <string name="country_music">Country</string>
+    <string name="rock_music">rock</string>
+    <string name="rock">Rock</string>
+    <string name="pop">pop</string>
+    <string name="pop_music">Pop</string>
+    <string name="jazz">jazz</string>
+    <string name="jazz_music">Jazz</string>
+    <string name="rb">rb</string>
+    <string name="r_amp_b"><![CDATA[R&B]]></string>
+    <string name="playsong">playsong</string>
+    <string name="Playing">Playing</string>
+    <string name="ElectronicMusic">ElectronicMusic</string>
+    <string name="RandBMusic">RandBMusic</string>
+    <string name="JazzMusic">JazzMusic</string>
+    <string name="PopMusic">PopMusic</string>
+    <string name="RockMusic">RockMusic</string>
+    <string name="CountryMusic">CountryMusic</string>
+</resources>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android.musicalstructureapp">
+
+    <application
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MusicalStructureApp">
+        <activity
+            android:name=".PlaySong"
+            android:label="@string/Playing" />
+        <activity
+            android:name=".Electronic"
+            android:label="@string/ElectronicMusic" />
+        <activity
+            android:name=".RandB"
+            android:label="@string/RandBMusic" />
+        <activity
+            android:name=".Jazz"
+            android:label="@string/JazzMusic" />
+        <activity
+            android:name=".Pop"
+            android:label="@string/PopMusic" />
+        <activity
+            android:name=".Rock"
+            android:label="@string/RockMusic" />
+        <activity
+            android:name=".CountryMusic"
+            android:label="@string/CountryMusic" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
